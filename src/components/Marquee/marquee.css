@@ -1,0 +1,21 @@
+/* styles.css */
+
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+  
+.marquee-container {
+    white-space: nowrap;
+    overflow: hidden;
+}
+  
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+  
